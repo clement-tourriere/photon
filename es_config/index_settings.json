@@ -1,4 +1,12 @@
 {
+    "similarity": {
+        "index": {
+            "type": "de.komoot.photon.index.similarity.PhotonSimilarityProvider"
+        },
+        "search": {
+            "type": "de.komoot.photon.index.similarity.PhotonSimilarityProvider"
+        }
+    },
   "analysis": {
     "analyzer": {
       "index_ngram": {
@@ -20,14 +28,6 @@
         "char_filter": ["punctuationgreedy"],
         "filter": ["word_delimiter", "lowercase", "asciifolding", "unique"],
         "tokenizer": "standard"
-      }
-    },
-    "similarity": {
-      "index": {
-        "type": "de.komoot.photon.index.similarity.PhotonSimilarity"
-      },
-      "search": {
-        "type": "de.komoot.photon.index.similarity.PhotonSimilarity"
       }
     },
     "char_filter": {

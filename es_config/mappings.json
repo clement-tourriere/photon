@@ -179,7 +179,6 @@
         }
       },
       "name": {
-        "similarity": "photonsimilarity",
         "properties": {
           "int": {
             "type": "string",
@@ -281,10 +280,12 @@
             "index": "no",
             "fields": {
               "ngrams": {
+                "similarity": "photon-similarity",
                 "type": "string",
                 "index_analyzer": "index_ngram"
               },
               "raw": {
+                "similarity": "photon-similarity",
                 "type": "string",
                 "index_analyzer": "index_raw"
               }
@@ -298,10 +299,12 @@
             "index": "no",
             "fields": {
               "ngrams": {
+                "similarity": "photon-similarity",
                 "type": "string",
                 "index_analyzer": "index_ngram"
               },
               "raw": {
+                "similarity": "photon-similarity",
                 "type": "string",
                 "index_analyzer": "index_raw"
               }
@@ -315,10 +318,12 @@
             "index": "no",
             "fields": {
               "ngrams": {
+                "similarity": "photon-similarity",
                 "type": "string",
                 "index_analyzer": "index_ngram"
               },
               "raw": {
+                "similarity": "photon-similarity",
                 "type": "string",
                 "index_analyzer": "index_raw"
               }
@@ -373,13 +378,13 @@
         }
       },
       "collector": {
-        "similarity": "photonsimilarity",
         "properties": {
           "de": {
             "type": "string",
             "analyzer": "index_ngram",
             "fields": {
               "raw": {
+                "similarity": "photon-similarity",
                 "type": "string",
                 "analyzer": "index_raw"
               }
@@ -388,8 +393,10 @@
           "en": {
             "type": "string",
             "analyzer": "index_ngram",
+            "similarity": "photon-similarity",
             "fields": {
               "raw": {
+                "similarity": "photon-similarity",
                 "type": "string",
                 "analyzer": "index_raw"
               }
@@ -398,8 +405,10 @@
           "fr": {
             "type": "string",
             "analyzer": "index_ngram",
+            "similarity": "photon-similarity",
             "fields": {
               "raw": {
+                "similarity": "photon-similarity",
                 "type": "string",
                 "analyzer": "index_raw"
               }
@@ -408,8 +417,10 @@
           "it": {
             "type": "string",
             "analyzer": "index_ngram",
+            "similarity": "photon-similarity",
             "fields": {
               "raw": {
+                "similarity": "photon-similarity",
                 "type": "string",
                 "analyzer": "index_raw"
               }
